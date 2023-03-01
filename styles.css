@@ -89,7 +89,72 @@ p:nth-of-type(even) {
 
 #three {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: 100px;
 }
 
+/* Bonus */
+#one {
+    flex-direction: column-reverse;
+}
+
+
+#purple {
+    align-self: flex-end;
+}
+
+#brown {
+    align-self: flex-start;
+    order: -1;
+}
+
+#three {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 100px;
+}
+
+#p-one {
+    /* grid-column-start: 1;
+    grid-column-end: 3; */
+
+    /* or */
+    grid-column: 1 / 3;
+}
+
+#p-two {
+    /* grid-column-start: 3;
+    grid-column-end: 5; */
+    grid-column: 3 / 5;
+}
+
+#p-three {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    /* grid-row-start: 2;
+    grid-row-end: 4; */
+
+    grid-row: 2/4;
+}
+
+#p-four {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+#p-five {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 5;
+}
+
+#p-six {
+    grid-column-start:1 ;
+    grid-column-end:4 ;
+}
+
+#p-eight {
+    grid-column: 2/5;
+}
