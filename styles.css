@@ -80,9 +80,16 @@ p:nth-of-type(even) {
     align-items: center;
 }
 
-#two{
+#two {
     display: flex;
-    justify-content: center;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
+
+#three {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: 100px;
+}
+
